@@ -1,4 +1,7 @@
 *.txt
+.env
 .jshintrc
-.adiversos
+./adiversos
+/diversos
 gitignore
+
