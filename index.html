@@ -19,28 +19,42 @@
    </header>
 
    <main>
-      <div class="estado-tribunal">
-         <p>TJSP - Capital - Área Cível</p>
-         <br>
-         <p>Digite o numero do processo:</p>
-      </div>
-      
-      <div class="busca-processo" data-toggle="tooltip" data-placement="bottom" 
-         data-tooltip="Entre com os 20 dígitos do processo. Ex.: 0018410-14.2020.8.26.0100" 
-         class="tooltip">   
-
-         <input id="nro-processo" class="campo-processo" maxlength="25" size="20" name="nro-processo" type="text"
-            placeholder="ex 0000000-00.0000.0.00.0000" aria-autocomplete="both" aria-haspopup="false"
-            autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false"
-            title="Ok" value="" aria-label="Número do processo. Informe os 20 dígitos do número do processo."></input>
+      <section>
+         <div class="estado-tribunal">
+            <p>TJSP - Capital - Área Cível</p>
+            <br>
+            <p>Digite o numero do processo:</p>
+         </div>
          
-         <button id="botao-pesquisar" class="botao-processo">Ok</button>
+         <div class="busca-processo" data-toggle="tooltip" data-placement="bottom" 
+            data-tooltip="Entre com os 20 dígitos do processo. Ex.: 0018410-14.2020.8.26.0100" 
+            class="tooltip">   
+            <input id="nro-processo" class="campo-processo" maxlength="25" size="20" name="nro-processo" type="text"
+               placeholder="ex 0000000-00.0000.0.00.0000" aria-autocomplete="both" aria-haspopup="false"
+               autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false"
+               title="Ok" value="" aria-label="Número do processo. Informe os 20 dígitos do número do processo."></input>
+            
+            <button id="botao-pesquisar" class="botao-processo">Ok</button>
+         </div>
 
-      </div>
+         <div class="erro-busca-processo">
+            <span id="id-erro-ajax" class="invisivel">Erro ao buscar o processo</span>  
+         </div>
+      </section>
 
-      <div class="erro-busca-processo">
-         <span id="id-erro-ajax" class="invisivel">Erro ao buscar o processo</span>  
-      </div>
+      <ul>
+         <li>Exemplo de Codigos de Processo para testar a busca</li>
+         <li>---</li> 
+         <li>5ee16301afd12a2f64eea614   </li>
+         <li>5ee16301afd12a2f64eea615   </li>
+         <li>5ee16301afd12a2f64eea617   </li> 
+         <li>5ee16300afd12a2f64ee639f   </li> 
+         <li>5ee16300afd12a2f64ee63a7   </li> 
+         <li>5ee16300afd12a2f64ee63bf   </li> 
+         <li>5ee16300afd12a2f64ee7104   </li> 
+         <li>---</li>  
+      </ul>
+
 
       <div class ="formato-publicacao">
 

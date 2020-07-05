@@ -22,7 +22,7 @@ btn.addEventListener('click', (e) => {
         var erroAjax = document.querySelector("#id-erro-ajax");
 
         if (xhr.status == 200) {
-            //erroAjax.classList.add("invisivel");
+            erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
 
             //var resposta = {
@@ -43,7 +43,7 @@ btn.addEventListener('click', (e) => {
             //publicacoes.forEach(publicacao => console.log(publicacao), adicionaPublicacao(publicacao))
 
         } else {
-            //erroAjax.classList.remove("invisivel")
+            erroAjax.classList.remove("invisivel")
         }
     })
     xhr.send();
