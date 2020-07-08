@@ -1,7 +1,0 @@
-*.txt
-.env
-.jshintrc
-./adiversos
-/diversos
-gitignore
-
